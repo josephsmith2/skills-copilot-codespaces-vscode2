@@ -1,8 +1,7 @@
-// create a web server
-var http = require('http');
-var fs = require('fs');
-var path = require('path');
-var mime = require('mime');
-var cache = {};
-
-// send 404
+// Create web server
+var express = require('express'),
+    app = express(),
+    bodyParser = require('body-parser'),
+    mongoose = require('mongoose'),
+    Comments = require('./models/comments');
+    
